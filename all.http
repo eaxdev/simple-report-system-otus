@@ -1,13 +1,6 @@
-# Simple Report System
-
-[![Build Status](https://github.com/eaxdev/simple-report-system-otus/workflows/build/badge.svg)](https://github.com/eaxdev/simple-report-system-otus/actions)
-
-## Connections
-
-- Create new connection:
-
-```http request
-POST /connections
+### Create new connection:
+POST localhost:8080/connections
+Content-Type: application/json
 
 {
   "connectionName": "ClickHouse#1",
@@ -19,18 +12,14 @@ POST /connections
   "password": "",
   "connectionProperties": []
 }
-```
 
-- Show all connections with pagination:
 
-```http request
-GET /connections?page=0&size=10
-```
+### Show all connections with pagination
+GET localhost:8080/connections?page=0&size=10
 
-- Add new data model:
-
-```http request
-POST /models
+### Add new data model
+POST localhost:8080/models
+Content-Type: application/json
 
 {
   "name": "ontime",
@@ -44,24 +33,16 @@ POST /models
     }
   }
 }
-```
 
-- Show all data models with pagination:
+### Show all data models with pagination
+GET localhost:8080/models?page=0&size=10
 
-```http request
-GET /models?page=0&size=10
-```
+### Get data model by id
+GET localhost:8080/models/1
 
-- Get data model by id:
-
-```http request
-GET /models/1
-```
-
-- Create report:
-
-```http request
-POST /reports
+### Create report:
+POST localhost:8080/reports
+Content-Type: application/json
 
 {
   "name": "report1",
@@ -89,10 +70,7 @@ POST /reports
     ]
   }
 }
-```
 
-- Show all reports:
 
-```http request
+### Show all reports:
 GET /reports?page=0&size=10
-```

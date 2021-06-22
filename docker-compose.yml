@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+  source:
+    image: yandex/clickhouse-server:20.8
+    ports:
+      - "8123:8123"
+      - "9000:9000"
+    volumes:
+      - ./ontime.sql:/docker-entrypoint-initdb.d/ontime.sql
+    restart: always
+
+  #app:
+  #  image: ghcr.io/eaxdev/report-system:0.1
+  #  container_name: simple-report-system
+ #   depends_on:
+  #    - source
+  #  ports:
+  #    - "8080:8080"
+  #    - "8000:8000"
+  #  restart: always

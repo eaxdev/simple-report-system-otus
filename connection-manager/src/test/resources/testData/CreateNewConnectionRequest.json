@@ -1,0 +1,15 @@
+{
+  "connectionName": "Test connection",
+  "connectionProperties": [
+    {
+      "name": "sslMode",
+      "value": "DISABLED"
+    }
+  ],
+  "description": "Test connection description",
+  "host": "localhost",
+  "active": true,
+  "password": "qwerty",
+  "port": 8888,
+  "userName": "sys"
+}

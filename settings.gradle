@@ -1,0 +1,8 @@
+rootProject.name = 'simple-report-system'
+include 'connection-manager'
+include 'application'
+include 'database-migration'
+include 'data-model'
+include 'report-manager'
+include 'report-viewer'
+

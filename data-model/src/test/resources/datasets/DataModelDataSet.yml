@@ -1,0 +1,7 @@
+data_model:
+  - model_id: 1
+    name: "DataModel1"
+    description: "DataModel1 description"
+    "table_name": "ontime"
+    connection_id: 1
+    json_criteria: "{\"eq\":{\"fieldName\":\"Origin\",\"value\":\"JFK\"}}"

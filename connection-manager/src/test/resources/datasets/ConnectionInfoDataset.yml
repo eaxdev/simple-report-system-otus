@@ -1,0 +1,19 @@
+connection_info:
+  - id: 1
+    name: "ClickHouse"
+    description: "ClickHouse Connection"
+    host: "localhost"
+    port: 8124
+    user: "default"
+    password: "+ErLRHlRHaA="
+
+connection_property:
+  - id: 1
+    connection_info_id: 1
+    name: "use_server_time_zone"
+    value: "false"
+
+  - id: 2
+    connection_info_id: 1
+    name: "use_time_zone"
+    value: "UTC"

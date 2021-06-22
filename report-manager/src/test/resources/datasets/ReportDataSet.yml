@@ -1,0 +1,8 @@
+report:
+  - report_id: 1
+    name: "report1"
+    description: "The number of flights per day"
+    model_id: 1
+    query: "SELECT DayOfWeek, count(*) FROM ontime WHERE Origin = 'JFK' AND (Year >= 1988 AND Year <= 1990) GROUP BY DayOfWeek"
+    count_query: "SELECT count(*) FROM ontime WHERE Origin = 'JFK' AND (Year >= 1988 AND Year <= 1990) GROUP BY DayOfWeek"
+    original_json: "{\"id\":null,\"name\":\"report1\",\"description\":\"The number of flights per day\",\"modelId\":1,\"outputs\":[\"DayOfWeek\",\"count(*)\"],\"groupBy\":\"DayOfWeek\",\"criteria\":{\"and\":[{\"ge\":{\"fieldName\":\"Year\",\"value\":\"1988\"}},{\"le\":{\"fieldName\":\"Year\",\"value\":\"1990\"}}]}}"

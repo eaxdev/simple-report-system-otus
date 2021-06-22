@@ -1,0 +1,35 @@
+{
+  "content": [
+    {
+      "connectionId": 1,
+      "connectionName": "ClickHouse",
+      "description": "ClickHouse Connection",
+      "active": true
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "unsorted": true,
+      "sorted": false,
+      "empty": true
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 20,
+    "unpaged": false,
+    "paged": true
+  },
+  "last": true,
+  "totalElements": 1,
+  "totalPages": 1,
+  "size": 20,
+  "number": 0,
+  "sort": {
+    "unsorted": true,
+    "sorted": false,
+    "empty": true
+  },
+  "first": true,
+  "numberOfElements": 1,
+  "empty": false
+}

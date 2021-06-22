@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "name": "DataModel1",
+  "description": "DataModel1 description",
+  "tableName": "ontime",
+  "criteria": {
+    "eq": {
+      "fieldName": "Origin",
+      "value": "JFK"
+    }
+  }
+}
