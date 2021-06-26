@@ -9,12 +9,12 @@ services:
       - ./ontime.sql:/docker-entrypoint-initdb.d/ontime.sql
     restart: always
 
-  #app:
-  #  image: ghcr.io/eaxdev/report-system:0.1
-  #  container_name: simple-report-system
- #   depends_on:
-  #    - source
-  #  ports:
-  #    - "8080:8080"
-  #    - "8000:8000"
-  #  restart: always
+  app:
+    image: ghcr.io/eaxdev/report-system:0.1
+    container_name: simple-report-system
+    depends_on:
+      - source
+    ports:
+      - "8080:8080"
+      - "8000:8000"
+    restart: always
