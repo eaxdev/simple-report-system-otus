@@ -1,0 +1,26 @@
+{
+  "name": "report1",
+  "description": "The number of flights per day",
+  "modelId": 1,
+  "outputs": [
+    "DayOfWeek",
+    "count(*)"
+  ],
+  "groupBy": "DayOfWeek",
+  "criteria": {
+    "and": [
+      {
+        "ge": {
+          "fieldName": "Year",
+          "value": "1988"
+        }
+      },
+      {
+        "le": {
+          "fieldName": "Year",
+          "value": "1990"
+        }
+      }
+    ]
+  }
+}

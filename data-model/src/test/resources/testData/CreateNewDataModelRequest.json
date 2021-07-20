@@ -1,0 +1,12 @@
+{
+  "name": "ontime",
+  "description": "Flight data",
+  "connectionId": 1,
+  "tableName": "ontime",
+  "criteria": {
+    "eq": {
+      "fieldName": "Origin",
+      "value": "JFK"
+    }
+  }
+}

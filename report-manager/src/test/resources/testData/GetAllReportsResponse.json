@@ -1,0 +1,56 @@
+{
+  "content": [
+    {
+      "id": 1,
+      "name": "report1",
+      "description": "The number of flights per day",
+      "modelId": 1,
+      "outputs": [
+        "DayOfWeek",
+        "count(*)"
+      ],
+      "groupBy": "DayOfWeek",
+      "criteria": {
+        "and": [
+          {
+            "ge": {
+              "fieldName": "Year",
+              "value": "1988"
+            }
+          },
+          {
+            "le": {
+              "fieldName": "Year",
+              "value": "1990"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": false,
+      "unsorted": true,
+      "empty": true
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 20,
+    "unpaged": false,
+    "paged": true
+  },
+  "last": true,
+  "totalPages": 1,
+  "totalElements": 1,
+  "size": 20,
+  "number": 0,
+  "sort": {
+    "sorted": false,
+    "unsorted": true,
+    "empty": true
+  },
+  "first": true,
+  "numberOfElements": 1,
+  "empty": false
+}

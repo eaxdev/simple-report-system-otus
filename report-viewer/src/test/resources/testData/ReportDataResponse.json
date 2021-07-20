@@ -1,0 +1,109 @@
+{
+  "content": [
+    {
+      "DestCityName": "St. Louis, MO",
+      "OriginCityName": "Washington, DC"
+    },
+    {
+      "DestCityName": "Syracuse, NY",
+      "OriginCityName": "Ithaca/Cortland, NY"
+    },
+    {
+      "DestCityName": "New York, NY",
+      "OriginCityName": "Syracuse, NY"
+    },
+    {
+      "DestCityName": "Bristol/Johnson City/Kingsport, TN",
+      "OriginCityName": "Charlotte, NC"
+    },
+    {
+      "DestCityName": "Syracuse, NY",
+      "OriginCityName": "New York, NY"
+    },
+    {
+      "DestCityName": "Buffalo, NY",
+      "OriginCityName": "Syracuse, NY"
+    },
+    {
+      "DestCityName": "Lexington, KY",
+      "OriginCityName": "Washington, DC"
+    },
+    {
+      "DestCityName": "Washington, DC",
+      "OriginCityName": "Syracuse, NY"
+    },
+    {
+      "DestCityName": "Syracuse, NY",
+      "OriginCityName": "Hartford, CT"
+    },
+    {
+      "DestCityName": "Boston, MA",
+      "OriginCityName": "Syracuse, NY"
+    },
+    {
+      "DestCityName": "Syracuse, NY",
+      "OriginCityName": "Newark, NJ"
+    },
+    {
+      "DestCityName": "Binghamton, NY",
+      "OriginCityName": "Ithaca/Cortland, NY"
+    },
+    {
+      "DestCityName": "Ithaca/Cortland, NY",
+      "OriginCityName": "Syracuse, NY"
+    },
+    {
+      "DestCityName": "Syracuse, NY",
+      "OriginCityName": "Boston, MA"
+    },
+    {
+      "DestCityName": "Cleveland, OH",
+      "OriginCityName": "Syracuse, NY"
+    },
+    {
+      "DestCityName": "Baltimore, MD",
+      "OriginCityName": "Syracuse, NY"
+    },
+    {
+      "DestCityName": "Syracuse, NY",
+      "OriginCityName": "New York, NY"
+    },
+    {
+      "DestCityName": "Buffalo, NY",
+      "OriginCityName": "Syracuse, NY"
+    },
+    {
+      "DestCityName": "Utica/Rome, NY",
+      "OriginCityName": "New York, NY"
+    },
+    {
+      "DestCityName": "Boston, MA",
+      "OriginCityName": "Syracuse, NY"
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": false,
+      "unsorted": true,
+      "empty": true
+    },
+    "offset": 0,
+    "pageNumber": 0,
+    "pageSize": 20,
+    "paged": true,
+    "unpaged": false
+  },
+  "last": false,
+  "totalPages": 2,
+  "totalElements": 27,
+  "size": 20,
+  "number": 0,
+  "sort": {
+    "sorted": false,
+    "unsorted": true,
+    "empty": true
+  },
+  "first": true,
+  "numberOfElements": 20,
+  "empty": false
+}

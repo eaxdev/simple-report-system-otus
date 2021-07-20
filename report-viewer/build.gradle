@@ -1,0 +1,45 @@
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}
+
+dependencies {
+
+    implementation project(":database-migration")
+    implementation project(":report-manager")
+    implementation project(":data-model")
+    implementation project(":connection-manager")
+
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+
+    implementation ('org.springframework.boot:spring-boot-starter-web') {
+        exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
+    }
+
+    implementation 'ru.yandex.clickhouse:clickhouse-jdbc:0.2.6'
+
+    implementation 'org.springframework.boot:spring-boot-starter-jetty'
+
+    implementation 'org.springdoc:springdoc-openapi-ui:1.5.2'
+
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+    testImplementation("com.github.database-rider:rider-spring:1.21.0")
+    testImplementation("org.junit.jupiter:junit-jupiter-api")
+    testImplementation("org.testcontainers:clickhouse:1.15.3")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+    testImplementation("com.h2database:h2")
+}
+
+compileJava {
+    options.compilerArgs += ['--enable-preview']
+}
+
+compileTestJava {
+    options.compilerArgs += ['--enable-preview']
+}
